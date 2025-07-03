@@ -1,0 +1,243 @@
+@font-face {
+    font-family: doto;
+    src: url(assets/Doto_Rounded-Regular.ttf);
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background: hsl(216, 65%, 11%);
+    /* deep navy */
+    scroll-behavior: smooth;
+    font-family: doto;
+    overflow-x: clip;
+}
+
+#background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tab-items ul {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+
+}
+
+.tab-items a {
+
+    color: 	#cbd5e1;
+
+}
+
+.tab-items {
+    display: flex;
+}
+
+.app-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.name {
+    color: #f1f5f9;
+    font-size: xx-large;
+
+    font-weight: 900;
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.contact {
+    width: 100px;
+    height: 40px;
+    background-color: 	#22d3ee;
+    color:#0f172a;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.profile-pic{
+    width: 350px;
+    height: 370px;
+    border-radius: 50%;
+}
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 15px;
+}
+.profile-section{
+    display: flex;
+    padding: 20px;
+    color: cyan;
+    
+  
+
+   
+}
+.about-me{
+    width: 50vw;
+    padding: 25px 55px;
+}
+.home{
+
+    
+    height: 650px;
+    display: flex;
+    
+   
+    color: cyan;
+    font-weight: bolder;
+}
+.half{
+    background-color: rgba(242, 242, 242, 0.064);
+    width: 50vw;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.home ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    
+}
+.connect-me{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 650px;
+    flex-direction: column;
+}
+.skills-tools{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+.skill{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgba(0, 0, 0,0.1);
+    height: 120px;
+    border-radius: 15px;
+
+    
+}
+.st{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.st img{
+    width: 50px;
+}
+.tools{
+      display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0,0.2);
+    height: 120px;
+    border-radius: 15px;
+
+}
+.half .name{
+    font-size: 56px;
+}
+.project-section{
+    width: 100%;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    justify-content: space-evenly;
+}
+.project{
+    width: 20%;
+    height: 200px;
+   background-color:rgba(0, 0, 0,0.1); ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding : 10px 7px;
+   border-radius: 15px;
+}
+.p-sec{  
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.project-image{
+    width: 98%;
+    height: 80%;
+    
+    border-radius: 15px;
+
+}
+.project-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.project-section h3{
+    color: white;
+    margin-left: 45px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.project p{
+    color: white;
+}
+#bg-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* ✅ This one only */
+  z-index: -1;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 80%);
+  transition: background 0.1s ease;
+}
