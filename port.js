@@ -1,4 +1,5 @@
  const background = document.getElementById("background");
+ const navLinks = document.querySelectorAll('.tab-items a');
 
   window.addEventListener("mousemove", (e) => {
     const x = e.clientX;
@@ -17,3 +18,11 @@ My journey began with mobile development using Flutter, but I quickly realized t
 I believe in writing purposeful code and designing interfaces that feel intuitive and polished. Every day, I push myself to learn, create, and grow — not just as a developer, but as a builder of meaningful digital experiences`
   
   document.getElementById("about-content").innerHTML = aboutMeContent;
+  
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.forEach(el => el.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
